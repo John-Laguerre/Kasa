@@ -1,10 +1,17 @@
 import React from "react"
-import ReactDOM from "react-dom/client"
+import ReactDOM from "react-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Home"
+import Header from "./components/Header"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 )
