@@ -1,0 +1,17 @@
+@import '../styled/Scss/Colors.scss';
+
+.home-logo {
+    height: 70px;
+    margin-right: auto;
+  }
+  
+  .nav-container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .right-align-container {
+    margin-left: auto;
+  }
