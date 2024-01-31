@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import housing from "../../datas/housing"
 
 const HomeWrapper = styled.div`
   display: flex;
@@ -15,7 +14,6 @@ const HomerContainer = styled.div`
 `
 
 function Home() {
-  console.log(housing)
   return (
     <HomeWrapper>
       <HomerContainer></HomerContainer>
