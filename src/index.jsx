@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Header from "./components/Header"
-import Error from "./components/Error"
-import Sheet from "./pages/Sheet"
+import ErrorPage from "./pages/ErrorPage"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,9 +12,8 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Error />} />
-        <Route path="/" element={<About />} />
-        <Route path="/" element={<Sheet />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
   </React.StrictMode>,
