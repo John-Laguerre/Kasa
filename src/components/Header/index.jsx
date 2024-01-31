@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { StyledLink } from "../../utils/Atoms"
 import LogoHeader from "../../assets/LOGO.png"
 
 const HomeLogo = styled.img`
