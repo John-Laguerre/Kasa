@@ -1,9 +1,10 @@
-function Error() {
+function ErrorPage() {
   return (
     <div>
-      <h1>Oup 🙈 Cette page n'existe pas</h1>
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
     </div>
   )
 }
 
-export default Error
+export default ErrorPage
