@@ -1,23 +1,18 @@
-import styled from "styled-components"
-
-const HomeWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-const HomerContainer = styled.div`
-  margin: 30px;
-  background-color: ;
-  padding: 60px 90px;
-  display: flex;
-  flex-direction: row;
-`
+import React from "react"
+import Banner from "../../components/Banner"
+import Card from "../../components/Card"
+import { housingData } from "../../datas/housing"
 
 function Home() {
   return (
-    <HomeWrapper>
-      <HomerContainer></HomerContainer>
-    </HomeWrapper>
+    <>
+      <Banner />
+      <div className="card-container">
+        {housingData.map((house) => (
+          <Card key={house.id} />
+        ))}
+      </div>
+    </>
   )
 }
 
