@@ -1,7 +1,7 @@
 import React from "react"
 import Banner from "../../components/Banner"
 import Card from "../../components/Card"
-import { housingData } from "../../datas/housing"
+import housingData from "../../datas/housing"
 
 function Home() {
   return (
