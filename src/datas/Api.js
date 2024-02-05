@@ -1,5 +1,5 @@
-import data from "./housing.json"
+import housingData from "./housing.json"
 
 export function getHousings() {
-  return data
+  return housingData
 }
