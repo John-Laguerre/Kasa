@@ -1,0 +1,28 @@
+@import "../../utils/variable.scss";
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .img404 {
+        width: 597px;
+        height: 263px;
+    }
+  
+    p {
+        color: $primary-color;
+        font-family: $font;
+        font-size: 36px;
+    }
+  
+    a {
+        color: $primary-color;
+        font-family: $font;
+        font-size: 18px;
+        text-decoration-line: underline;
+    }
+  }
+  
