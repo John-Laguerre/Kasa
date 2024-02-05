@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import ErrorPage from "./pages/ErrorPage"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>
+      <Footer />
     </>
   )
 }
