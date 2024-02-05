@@ -1,14 +1,16 @@
 import React from "react"
 import Banner from "../../components/Banner"
 import Card from "../../components/Card"
-import housingData from "../../datas/housing"
+import { getHousings } from "../../datas/Api"
 
 function Home() {
+  const housings = getHousings()
+
   return (
     <>
       <Banner />
       <div className="card-container">
-        {housingData.map((house) => (
+        {housings.map((house) => (
           <Card key={house.id} />
         ))}
       </div>

@@ -1,5 +1,5 @@
 import housingData from "./housing.json"
 
-export function getHousings() {
+export const getHousings = () => {
   return housingData
 }
