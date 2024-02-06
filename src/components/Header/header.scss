@@ -4,7 +4,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     padding: 20px 40px;
+=======
+    margin-top: 43px;
+>>>>>>> de474ea (Mise à jour)
 
     .logo {
         img {
@@ -24,7 +28,10 @@ header {
         a {
             text-decoration: none;
             color: $primary-color;
+<<<<<<< HEAD
             font-family: $font;
+=======
+>>>>>>> de474ea (Mise à jour)
 
             &.active {
                 border-bottom: 1px solid $primary-color;
