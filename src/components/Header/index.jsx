@@ -10,13 +10,6 @@ function Header() {
         <img src={Logo} alt="Kara Logo" />
       </NavLink>
       <nav>
-<<<<<<< HEAD
-        <NavLink to="/" exact activeClassName="active">
-          Acceuil
-        </NavLink>
-        <NavLink to="/About" activeClassName="active">
-          A Propos
-=======
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : undefined)}
@@ -28,7 +21,6 @@ function Header() {
           className={({ isActive }) => (isActive ? "active" : undefined)}
         >
           À Propos
->>>>>>> de474ea (Mise à jour)
         </NavLink>
       </nav>
     </header>
