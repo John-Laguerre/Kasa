@@ -1,7 +1,7 @@
 import React from "react"
 import Banner from "../../components/Banner"
 
-function About() {
+const About = () => {
   return (
     <main>
       <Banner backgroundImage="" title="" />

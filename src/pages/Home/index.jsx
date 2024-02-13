@@ -4,7 +4,7 @@ import Card from "../../components/Card"
 import { getHousings } from "../../datas/Api"
 import "./Home.scss"
 
-function Home() {
+const Home = () => {
   const [housings, setHousings] = useState([])
 
   useEffect(() => {

@@ -2,7 +2,7 @@ import React from "react"
 import "./errorPage.scss"
 import image404 from "../../assets/404.png"
 
-function ErrorPage() {
+const ErrorPage = () => {
   return (
     <div className="error-page">
       <img src={image404} alt="404" className="img404" />
