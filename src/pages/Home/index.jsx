@@ -15,7 +15,7 @@ function Home() {
     <>
       <Banner />
       <div className="card-container">
-        {housings.slice(0, 6).map((housing) => (
+        {housings.map((housing) => (
           <Card
             key={housing.id}
             title={housing.title}
