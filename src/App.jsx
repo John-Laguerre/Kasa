@@ -6,6 +6,8 @@ import About from "./pages/About"
 import ErrorPage from "./pages/ErrorPage"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Housing from "./pages/Housing/housing"
+
 const GlobalStyle = createGlobalStyle`
   div {
     font-family:  'Montserrat', sans-serif;
@@ -25,6 +27,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/Housing/:houseNumber" element={<Housing />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>
