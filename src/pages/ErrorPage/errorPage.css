@@ -1,0 +1,20 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.error-page .img404 {
+  width: 597px;
+  height: 263px;
+}
+.error-page p {
+  color: #FF6060;
+  font-size: 36px;
+}
+.error-page a {
+  color: #FF6060;
+  font-size: 18px;
+  text-decoration-line: underline;
+}/*# sourceMappingURL=errorPage.css.map */

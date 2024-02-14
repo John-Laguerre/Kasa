@@ -1,0 +1,17 @@
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 66px 464px 29px 463px;
+  font-size: 0.8em;
+  text-align: center;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28.556px;
+}
+.footer .logo {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=Footer.css.map */
