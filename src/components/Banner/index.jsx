@@ -4,7 +4,10 @@ import BannerImage from "../../assets/IMG1.png"
 
 const Banner = () => {
   return (
-    <div className="banner" style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div
+      className="kara-banner1"
+      style={{ backgroundImage: `url(${BannerImage})` }}
+    >
       <h2>Chez vous, partout et ailleurs</h2>
     </div>
   )
