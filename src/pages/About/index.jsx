@@ -1,4 +1,5 @@
 import React from "react"
+import "./About.css"
 import BannerImg from "../../assets/IMG2.png"
 
 const About = () => {
