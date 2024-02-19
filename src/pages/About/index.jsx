@@ -1,11 +1,12 @@
 import React from "react"
-import Banner from "../../components/Banner"
+import BannerImg from "../../assets/IMG2.png"
 
 const About = () => {
   return (
-    <main>
-      <Banner backgroundImage="" title="" />
-    </main>
+    <div
+      className="kara-banner2"
+      style={{ backgroundImage: `url(${BannerImg})` }}
+    ></div>
   )
 }
 
