@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 
 const Card = ({ title, imageUrl, id }) => {
   return (
-    <Link to={"./Housing/" + id}>
-      <div className="card">
+    <div className="card">
+      <Link className="linkModir" to={"./Housing/" + id}>
         <img src={imageUrl} alt={title} className="card-image" />
         <div className="card-title">{title}</div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   )
 }
 
