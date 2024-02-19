@@ -1,1 +1,27 @@
-/*# sourceMappingURL=Collapse.css.map */
+.collapse-container {
+  padding: 10px 20px 10px 15px;
+}
+
+.collapse-title {
+  background-color: #FF6060;
+  color: #FFFFFF;
+  padding: 10px 20px 10px 15px;
+  height: 52px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collapse-title .arrow {
+  transition: transform 0.3s ease;
+}
+.collapse-title.open .arrow {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  padding: 10px;
+  border: 1px solid #FF6060;
+  border-top: none;
+}/*# sourceMappingURL=Collapse.css.map */
