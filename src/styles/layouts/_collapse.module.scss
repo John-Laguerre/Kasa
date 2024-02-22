@@ -1,7 +1,7 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables';
 
-.ctaAccordionAbout {
+.ctaCollapseAbout {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,7 +16,7 @@
   }
 }
 
-.ctaAccordionHouse {
+.ctaCollapseHouse {
   display: flex;
   gap: 76px;
   width: 87%;
@@ -37,7 +37,7 @@
   }
 }
 
-.accordion {
+.collapse {
   display: flex;
   flex-direction: column;
 
