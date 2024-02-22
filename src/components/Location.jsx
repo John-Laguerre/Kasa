@@ -4,9 +4,10 @@ import Card from './Card';
 export default function Location({ data }) {
   return (
     <div className={style.home__location}>
-      {data.map((card) => (
-        <Card key={card.id} card={card} />
-      ))}
+      {/* Parcours les données reçu en prop et pour chaques données crée une card en utilisant l'index comme clé unique */}
+      {data.map((card) => {
+        return <Card key={card.id} card={card} />;
+      })}
     </div>
   );
 }
