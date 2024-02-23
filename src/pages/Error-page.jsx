@@ -1,8 +1,8 @@
 import React from 'react';
 import { useRouteError } from 'react-router-dom';
-import Header from '../components/Header.jsx';
+import Header from '../components/Haut&Bas_Pages/Header.jsx';
 import ErrorMessage from '../components/Error404.jsx';
-import Footer from '../components/Footer.jsx';
+import Footer from '../components/Haut&Bas_Pages/Footer.jsx';
 
 export default function ErrorPage() {
   // Récupère le code erreur avec le hook 'useRouteError'
