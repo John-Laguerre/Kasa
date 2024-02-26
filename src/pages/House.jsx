@@ -1,9 +1,9 @@
+import { redirect, useLoaderData } from 'react-router-dom';
+
 import data from '../data.json';
 import Main from '../components/Main';
 import Carousel from '../components/Carousel';
 import Information from '../components/Information.jsx';
-
-import { redirect, useLoaderData } from 'react-router-dom';
 
 // Crée une fonction qui va retourner les valeurs d'un logement
 export async function loader({ params }) {
