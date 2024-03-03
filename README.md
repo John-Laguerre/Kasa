@@ -1,4 +1,7 @@
-Kasa
+# Kasa
+
+<img width="1233" alt="Capture d’écran 2024-03-03 à 21 10 51" src="https://github.com/John-Laguerre/Kasa/assets/137527343/ba16702a-78dd-4572-b5a4-12f02047bb32">
+
 
 # English
 
