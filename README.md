@@ -2,6 +2,8 @@ Kasa
 
 # English
 
+## Launch of the Frontend
+
 Open a new instance of your terminal or a new tab in your current terminal.
 
 Navigate to the folder containing Kara's frontend code developed with Create React App.
