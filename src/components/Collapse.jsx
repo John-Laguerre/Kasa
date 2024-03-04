@@ -45,7 +45,6 @@ export default function Collapse({ title, content }) {
           />
         }
       </div>
-      {/* En référence le content approprié au DOM */}
       <div className={style.collapse__content} ref={contient}>
         {/* Applique un style au content si l'état est active */}
         <div
