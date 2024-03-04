@@ -13,7 +13,6 @@ function Header() {
       <nav className={styles.nav}>
         <ul>
           <li>
-            {/* utilisation du composant 'NavLink' qui reconnait si avtive est ou non */}
             <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
