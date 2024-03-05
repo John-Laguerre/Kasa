@@ -3,9 +3,9 @@ import style from '../styles/layouts/_home_location.module.scss';
 import { Link } from 'react-router-dom';
 
 export default function Card({ card }) {
-  // Rècupère le titre de la carte pour le convertir en miniscule
-  // puis divise le titre en un tableau de mots
-  // et joint les mots par des tirets pour le slug
+  /* Ce slug transforme le titre en minuscules, remplace les espaces par des tirets,
+      et est utilisé pour construire l'URL de navigation.*/
+
   const slug = card.title.toLowerCase().split(' ').join('-');
 
   return (
