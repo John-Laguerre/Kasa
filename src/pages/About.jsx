@@ -1,5 +1,5 @@
 import Main from '../components/Main';
-import AboutBanner from '../components/AboutBanner';
+import AboutBanner from '../components/Banner/AboutBanner';
 import style from '../styles/layouts/_collapse.module.scss';
 import Collapse from '../components/Collapse';
 

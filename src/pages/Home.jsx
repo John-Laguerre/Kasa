@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import data from '../data.json';
 
 import Main from '../components/Main';
-import HomeBanner from '../components/HomeBanner';
+import HomeBanner from '../components/Banner/HomeBanner';
 import Location from '../components/Location';
 
 // Crée une fonction asynchrone pour renvoyez les données contenu dans la variable 'house'
