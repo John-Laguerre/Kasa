@@ -5,11 +5,10 @@ import data from '../data.json';
 
 import Main from '../components/Main';
 import HomeBanner from '../components/Banner/HomeBanner';
-import Location from '../components/Gallery/Location';
+import Gallery from '../components/Gallery/Gallery';
 
 // Crée une fonction asynchrone pour renvoyez les données contenu dans la variable 'house'
 export async function loader({ params }) {
-  // Appel du fichier 'data.JSON'
   const house = data;
   return { house };
 }
@@ -22,7 +21,7 @@ function Home() {
     <Main>
       <HomeBanner />
       {/* Passe en prop 'data', les données au composant 'Location' */}
-      <Location data={house} />
+      <Gallery data={house} />
     </Main>
   );
 }
