@@ -4,7 +4,7 @@ import { createBrowserRouter, Outlet } from 'react-router-dom';
 import HeaderFooterLayout from './Layout/HeaderFooterLayout';
 import Home, { loader as homeLoader } from './pages/Home';
 import ErrorPage from './pages/Error-page';
-import House, { loader as houseLoader } from './pages/House';
+import House, { loader as houseLoader } from './pages/Housing';
 import About from './pages/About';
 
 const AppRouter = createBrowserRouter([
