@@ -149,6 +149,7 @@
       @include mobile {
         padding: 0;
         height: auto;
+        position: initial;
       }
 
       &__name {
@@ -216,6 +217,7 @@
 
       @include mobile {
         justify-content: flex-start;
+        position: initial;
       }
 
       &__star {
