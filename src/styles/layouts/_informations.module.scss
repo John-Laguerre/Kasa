@@ -142,6 +142,8 @@
       @include tablet {
         padding: 0;
         height: auto;
+        position: relative;
+        bottom: 13px;
       }
 
       @include mobile {
@@ -197,6 +199,7 @@
 
         @include mobile {
           width: 32px;
+          height: 32px;
         }
       }
     }
@@ -207,6 +210,8 @@
 
       @include tablet {
         justify-content: flex-start;
+        position: relative;
+        bottom: 20px;
       }
 
       @include mobile {
