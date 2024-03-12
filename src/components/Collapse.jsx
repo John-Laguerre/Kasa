@@ -3,56 +3,45 @@ import Arrow from '../assets/arrow.svg';
 import style from '../styles/layouts/_collapse.module.scss';
 
 export default function Collapse({ title, content }) {
-  // Avec le hook 'useRef', crée une référence mutable à un élément DOM avec une valeur mis à 'null'
+  // Références au titre et au contenu pour manipulation directe.
   const head = useRef(null);
   const contient = useRef(null);
-  // Crée une variable d'état 'isActive' et une fonction 'setIsActive' en utilisant le hook 'useState'
+  // Gestion de l'état d'ouverture/fermeture.
   const [isActive, setIsActive] = useState(false);
 
-  // Fonction qui déroule la collapse selon la taille et ajoute une propriété pour son style
-  const toogleCollapse = () => {
-    // Contrôle
-    // console.log(head.current);
-    // console.log(contient.current);
-
-    // Condition qui va modifier un style
-    if (contient.current.style.maxHeight) {
-      contient.current.style.maxHeight = null;
-      contient.current.style.padding = null;
+  // Bascule l'état ouvert/fermé du composant.
+  const toggleCollapse = () => {
+    // Ajustement du style pour l'animation d'ouverture/fermeture.
+    const { current: contentElement } = contient;
+    if (contentElement.style.maxHeight) {
+      contentElement.style.maxHeight = null;
+      contentElement.style.padding = null;
     } else {
-      contient.current.style.maxHeight = `${contient.current.scrollHeight}px`;
-      contient.current.style.padding = `20px 20px 20px 15px`;
+      contentElement.style.maxHeight = `${contentElement.scrollHeight}px`;
+      contentElement.style.padding = `20px 20px 20px 15px`;
     }
-    // Inverse la valeur actuelle de 'isActive'(MAJ 'isActive')
+    // Mise à jour de l'état.
     setIsActive(!isActive);
   };
 
   return (
     <div className={style.collapse}>
-      <div className={style.collapse__head} ref={head}>
-        {<h3 className={style.collapse__head__title}>{title}</h3>}
-        {
-          // Selon l'état du click
-          <img
-            src={Arrow}
-            alt="flèche vers le haut"
-            // Joue l'animation en fonction de l'état
-            className={`${style.collapse__arrow} ${
-              isActive && style.rotate180
-            }`}
-            // Appel au click la fonction
-            onClick={toogleCollapse}
-          />
-        }
+      <div className={style.collapse__head} ref={head} onClick={toggleCollapse}>
+        <h3 className={style.collapse__head__title}>{title}</h3>
+        <img
+          src={Arrow}
+          alt="Toggle collapse"
+          className={`${style.collapse__arrow} ${
+            isActive ? style.rotate180 : ''
+          }`}
+        />
       </div>
       <div className={style.collapse__content} ref={contient}>
-        {/* Applique un style au content si l'état est active */}
         <div
           className={`${style.collapse__content__inside} ${
-            isActive && style.active
+            isActive ? style.active : ''
           }`}
         >
-          {/* Affiche les données contenu dans le prop du titre concerné (opérateur ternaire ' ||') ou affiche un message */}
           {content || 'Pas de contenu disponible'}
         </div>
       </div>
