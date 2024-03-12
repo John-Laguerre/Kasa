@@ -4,16 +4,14 @@ import Header from '../components/Haut&Bas_Pages/Header.jsx';
 import ErrorMessage from '../components/Error404.jsx';
 import Footer from '../components/Haut&Bas_Pages/Footer.jsx';
 
+// Affiche une page d'erreur avec des informations spécifiques sur l'erreur survenue.
 export default function ErrorPage() {
-  // Récupère le code erreur avec le hook 'useRouteError'
-  const error = useRouteError();
-  // Controle pour le débogage
+  const error = useRouteError(); // Récupération de l'erreur pour affichage.
   console.log(error);
 
   return (
     <>
       <Header />
-      {/* Appel du compoosant en lui passant en prop l'objet 'error' */}
       <ErrorMessage error={error} />
       <Footer />
     </>
