@@ -5,14 +5,12 @@ import { RouterProvider } from 'react-router-dom';
 import App from './App';
 import './styles/style.scss';
 
-// Création d'un conteneur racine pour l'App React et le relie à l'élément racine avec l'ID 'root'
+// Initialise le conteneur racine de l'application.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Indique à React de rendre les composants dans le conteneur racine
+// Rendu de l'application dans le conteneur racine, enveloppée dans React.StrictMode pour une meilleure détection des problèmes.
 root.render(
-  // Appelle le composant 'React.StrictMode' qui active des vérifications et des avertissements supplémentaires pour ces composants enfants
   <React.StrictMode>
-    {/* Utilise la fonction 'RouterProvider' pour définir avec la propriété 'router' le router 'AppRouter' de l'app */}
     <RouterProvider router={App} />
   </React.StrictMode>
 );
